@@ -1,0 +1,317 @@
+/*---------- 
+Google Fonts
+------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;900&family=Lobster&family=Poppins:ital,wght@1,500&display=swap');
+/*-----------
+multyfole css
+-------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/*------------- 
+containner
+--------------*/
+.container{
+    height: auto;
+    width: 90%;
+    margin: 0% 5% 0% 5%;
+    background-color: rgba(247, 252, 253, 0.63); 
+}
+
+/*--------------------
+    hedder seassion 
+---------------------*/
+
+
+
+.headder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+}
+/*--------------------
+    Brand Logo
+---------------------*/
+.brand{
+    font-size: 2vw;
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 20px;
+    font-family: 'Lobster', cursive;
+}
+/*--------------------
+    Manus 
+---------------------*/
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    margin-right:30px;
+}
+
+/*--------------------
+    Manus item 
+---------------------*/
+.nav-item, .nav-icon{
+    color: black;
+    font-size: 1.5vw;
+    padding: 12px 16px 10px 0px; 
+    text-decoration: none;
+    position: relative;
+    margin-left: 10px;
+}
+.nav-item::before{
+    content: "";
+    height: 3px;
+    width: 100%;
+    opacity: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background:  #000;
+    transition: all 0.5s ease;
+}
+.nav-item:before{
+    opacity: 1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition:transform 0.5s ease ;
+}
+.nav-item:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.nav-icon:hover{
+    color: blue;
+}
+
+/*=====================
+     section-1 strat 
+=====================*/
+
+.section-1{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    padding-top: 50px;
+}
+
+/*=====================
+     section-1 text
+=====================*/
+
+.section-1-text{
+    width: 47%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3%;
+}
+.section-1-text h1{
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 100px;
+    font-style: normal;
+}
+.section-1-text p{
+    font-size: 16px;
+    font-weight: 600 ;
+    line-height: 24px;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+.section-1-text .link-btn{
+    text-decoration: none;
+    padding: 12px 16px;
+    color: white;
+    background: #E02C6D;
+    border-radius: 30px;
+}
+.section-1-image{
+    width: 50%;
+    background-image: url(logos/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: cover;
+}
+
+.main-img{
+    height: 414px;
+    width: 440px;
+    justify-content: center;
+    align-items: center;
+}
+.section-2{
+    width: 84%;
+    margin-left: 8%;
+    margin-right: 8%;
+    height: 200px;
+}
+.otner-brands{
+   justify-content: center;
+   align-items: center;
+}
+.otner-brand-logo{
+    padding: 12px 3%;
+}
+
+/*==============
+    section-3
+================*/
+
+
+.section-3{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+}
+.section-3 .section-title{
+    display: flex;
+    justify-content: center;
+}
+.section-title h1{
+    font-size: 28px;
+    font-weight: 600;
+    font-family: Poppins;
+    align-items: center;
+}
+.Product-section{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+.product{
+    width:329px;
+    height: 476px;
+    background: white;
+    border-radius: 5px;
+}
+.product-img{
+    height: 256px;
+    width: 94%;
+    padding: 3%;
+}
+.product-Description{
+    padding:0 0 4% 4%;
+    
+}
+.product-name{
+    font-size: 28px;
+    font-weight: 500;
+    font-family: Poppins;
+    line-height: 24px;
+}
+.price{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+}
+.reating{
+    width: 60%;
+}
+
+.stear{
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    font-family: 'Inter', sans-serif;
+    
+}
+.stear i{
+    height: 10.32;
+    width: 11.7;
+    color:#FB8200;
+}
+.product-Description p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 5px;
+    font-family: 'Inter', sans-serif;
+}
+.more{
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 24px;
+    color: #E02C6D;
+
+}
+section-4{
+    height: 500px;
+    width: 100%;
+}
+.blog{
+    width: 80%;
+    margin: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+blog-image img{
+    height: 270px;
+    width: 404px;
+    border-radius: 7px;
+}
+blog-text h1{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.blog-text p{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+.btn{
+    text-decoration: none;
+    padding: 10px 24px;
+    background: #E02C6D;
+    color: white;
+
+}
+footer{
+    height: 200px;
+    width: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-item{
+    color: white;
+    text-align: center;
+    
+}
+.footer-item h1{
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 20px;
+    line-height: 36px;
+}
+.footer-item p{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 36px;
+}
+.social{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.social-item{
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
